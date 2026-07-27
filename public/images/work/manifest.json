@@ -1,0 +1,382 @@
+{
+  "manifest": {
+    "kinh-do": [
+      {
+        "file": "/images/work/kinh-do/kinh-do-05.jpg",
+        "srcName": "MOCKUPcấp1.png",
+        "kb": 46
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-09.jpg",
+        "srcName": "mockup hộp chính 2.png",
+        "kb": 90
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-10.jpg",
+        "srcName": "mockup hộp chính.png",
+        "kb": 144
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-11.jpg",
+        "srcName": "mockup túi giấy (1).png",
+        "kb": 82
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-12.jpg",
+        "srcName": "mockupcâp1.png",
+        "kb": 40
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-15.jpg",
+        "srcName": "poster.png",
+        "kb": 181
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-01.jpg",
+        "srcName": "Bao bì ngoài cấp 1(1).png",
+        "kb": 144
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-02.jpg",
+        "srcName": "Bao bì ngoài cấp 1(2).png",
+        "kb": 146
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-03.jpg",
+        "srcName": "Bao bì ngoài cấp 1(3).png",
+        "kb": 156
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-04.jpg",
+        "srcName": "Bao bì ngoài cấp 1.png",
+        "kb": 151
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-06.jpg",
+        "srcName": "hộp trong.png",
+        "kb": 188
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-07.jpg",
+        "srcName": "mặt ngoài brochure.png",
+        "kb": 148
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-08.jpg",
+        "srcName": "mặt trong brochure.png",
+        "kb": 212
+      },
+      {
+        "file": "/images/work/kinh-do/kinh-do-13.jpg",
+        "srcName": "nắp hộp ngoài.png",
+        "kb": 354
+      }
+    ],
+    "calendar": [
+      {
+        "file": "/images/work/calendar/calendar-mock-1.jpg",
+        "srcName": "MOCKUP 1.png",
+        "kb": 130
+      },
+      {
+        "file": "/images/work/calendar/calendar-mock-2.jpg",
+        "srcName": "MOCKUP 2.png",
+        "kb": 122
+      },
+      {
+        "file": "/images/work/calendar/calendar-mock-3.jpg",
+        "srcName": "MOCKUP 3.png",
+        "kb": 110
+      },
+      {
+        "file": "/images/work/calendar/calendar-mock-4.jpg",
+        "srcName": "MOCKUP 4.png",
+        "kb": 115
+      },
+      {
+        "file": "/images/work/calendar/calendar-01.jpg",
+        "srcName": "Lich-01.png",
+        "kb": 339
+      },
+      {
+        "file": "/images/work/calendar/calendar-02.jpg",
+        "srcName": "Lich-02.png",
+        "kb": 307
+      },
+      {
+        "file": "/images/work/calendar/calendar-03.jpg",
+        "srcName": "Lich-03.png",
+        "kb": 278
+      },
+      {
+        "file": "/images/work/calendar/calendar-04.jpg",
+        "srcName": "Lich-04.png",
+        "kb": 285
+      },
+      {
+        "file": "/images/work/calendar/calendar-05.jpg",
+        "srcName": "Lich-05.png",
+        "kb": 282
+      },
+      {
+        "file": "/images/work/calendar/calendar-06.jpg",
+        "srcName": "Lich-06.png",
+        "kb": 273
+      },
+      {
+        "file": "/images/work/calendar/calendar-07.jpg",
+        "srcName": "Lich-07.png",
+        "kb": 285
+      },
+      {
+        "file": "/images/work/calendar/calendar-08.jpg",
+        "srcName": "Lich-08.png",
+        "kb": 290
+      },
+      {
+        "file": "/images/work/calendar/calendar-09.jpg",
+        "srcName": "Lich-09.png",
+        "kb": 295
+      },
+      {
+        "file": "/images/work/calendar/calendar-10.jpg",
+        "srcName": "Lich-10.png",
+        "kb": 297
+      }
+    ],
+    "kieng-la": [
+      {
+        "file": "/images/work/kieng-la/kieng-la-keyvisual.jpg",
+        "srcName": "keyvisual.png",
+        "kb": 379
+      },
+      {
+        "file": "/images/work/kieng-la/kieng-la-artboard-11.jpg",
+        "srcName": "Artboard 1 (1).png",
+        "kb": 240
+      },
+      {
+        "file": "/images/work/kieng-la/kieng-la-artboard-21.jpg",
+        "srcName": "Artboard 2 (1).png",
+        "kb": 222
+      },
+      {
+        "file": "/images/work/kieng-la/kieng-la-artboard-31.jpg",
+        "srcName": "Artboard 3 (1).png",
+        "kb": 235
+      },
+      {
+        "file": "/images/work/kieng-la/kieng-la-artboard-41.jpg",
+        "srcName": "Artboard 4 (1).png",
+        "kb": 294
+      },
+      {
+        "file": "/images/work/kieng-la/kieng-la-standee.jpg",
+        "srcName": "STANDEE.png",
+        "kb": 114
+      },
+      {
+        "file": "/images/work/kieng-la/kieng-la-bingsu.jpg",
+        "srcName": "bingsu (1).png",
+        "kb": 248
+      },
+      {
+        "file": "/images/work/kieng-la/kieng-la-canhchua.jpg",
+        "srcName": "canhchua.jpg",
+        "kb": 402
+      },
+      {
+        "file": "/images/work/kieng-la/kieng-la-gre.jpg",
+        "srcName": "gre (1).png",
+        "kb": 289
+      },
+      {
+        "file": "/images/work/kieng-la/kieng-la-pkien.jpg",
+        "srcName": "pkien (1).png",
+        "kb": 253
+      }
+    ],
+    "somogold": [
+      {
+        "file": "/images/work/somogold/somogold-poster.jpg",
+        "srcName": "poster1.png",
+        "kb": 348
+      },
+      {
+        "file": "/images/work/somogold/somogold-brochure-out.jpg",
+        "srcName": "Mặt Ngoài brochure rượu.jpg",
+        "kb": 307
+      },
+      {
+        "file": "/images/work/somogold/somogold-brochure-in.jpg",
+        "srcName": "Mặt trong brochure rượu.jpg",
+        "kb": 333
+      }
+    ],
+    "magazine": [
+      {
+        "file": "/images/work/magazine/magazine-mock-1.jpg",
+        "srcName": "Mockup1.png",
+        "kb": 103
+      },
+      {
+        "file": "/images/work/magazine/magazine-mock-2.jpg",
+        "srcName": "Mockup2.png",
+        "kb": 152
+      },
+      {
+        "file": "/images/work/magazine/magazine-mock-3.jpg",
+        "srcName": "Mockup3.png",
+        "kb": 149
+      },
+      {
+        "file": "/images/work/magazine/magazine-mock-4.jpg",
+        "srcName": "Mockup4.png",
+        "kb": 150
+      },
+      {
+        "file": "/images/work/magazine/magazine-mock-5.jpg",
+        "srcName": "Mockup5.png",
+        "kb": 158
+      },
+      {
+        "file": "/images/work/magazine/magazine-mock-6.jpg",
+        "srcName": "Mockup6.png",
+        "kb": 142
+      },
+      {
+        "file": "/images/work/magazine/magazine-mock-7.jpg",
+        "srcName": "Mockup7.png",
+        "kb": 140
+      },
+      {
+        "file": "/images/work/magazine/magazine-mock-8.jpg",
+        "srcName": "Mockup8.png",
+        "kb": 150
+      },
+      {
+        "file": "/images/work/magazine/magazine-cover.jpg",
+        "srcName": "BIATẠPCHI.png",
+        "kb": 245
+      },
+      {
+        "file": "/images/work/magazine/magazine-cover-alt.jpg",
+        "srcName": "BIATRC.png",
+        "kb": 101
+      },
+      {
+        "file": "/images/work/magazine/magazine-page-1.jpg",
+        "srcName": "Artboard 1.png",
+        "kb": 174
+      },
+      {
+        "file": "/images/work/magazine/magazine-page-2.jpg",
+        "srcName": "Artboard 2.png",
+        "kb": 313
+      },
+      {
+        "file": "/images/work/magazine/magazine-page-3.jpg",
+        "srcName": "Artboard 3.png",
+        "kb": 346
+      },
+      {
+        "file": "/images/work/magazine/magazine-page-4.jpg",
+        "srcName": "Artboard 4.png",
+        "kb": 314
+      }
+    ],
+    "cay-tre": [
+      {
+        "file": "/images/work/cay-tre/cay-tre-cover.jpg",
+        "srcName": "bia.png",
+        "kb": 150
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-1-2.jpg",
+        "srcName": "1-2.png",
+        "kb": 33
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-11-12.jpg",
+        "srcName": "11-12.png",
+        "kb": 185
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-13-14.jpg",
+        "srcName": "13-14.png",
+        "kb": 156
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-15-16.jpg",
+        "srcName": "15-16.png",
+        "kb": 185
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-17-18.jpg",
+        "srcName": "17-18.png",
+        "kb": 187
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-19-20.jpg",
+        "srcName": "19-20.png",
+        "kb": 190
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-21-22.jpg",
+        "srcName": "21-22.png",
+        "kb": 179
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-23-24.jpg",
+        "srcName": "23-24.png",
+        "kb": 121
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-25-26.jpg",
+        "srcName": "25-26.png",
+        "kb": 153
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-27-28.jpg",
+        "srcName": "27-28.png",
+        "kb": 107
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-29-30.jpg",
+        "srcName": "29-30.png",
+        "kb": 143
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-3-4.jpg",
+        "srcName": "3-4.png",
+        "kb": 122
+      },
+      {
+        "file": "/images/work/cay-tre/cay-tre-31.jpg",
+        "srcName": "31.png",
+        "kb": 14
+      }
+    ],
+    "tat-den": [
+      {
+        "file": "/images/work/tat-den/tat-den-mockup.jpg",
+        "srcName": "mockup bìa tắt đèn.png",
+        "kb": 113
+      },
+      {
+        "file": "/images/work/tat-den/tat-den-cover.jpg",
+        "srcName": "bìa truyện tắt đèn.png",
+        "kb": 153
+      }
+    ]
+  },
+  "covers": {
+    "kinh-do": "/images/work/kinh-do/kinh-do-05.jpg",
+    "calendar": "/images/work/calendar/calendar-mock-1.jpg",
+    "kieng-la": "/images/work/kieng-la/kieng-la-keyvisual.jpg",
+    "somogold": "/images/work/somogold/somogold-poster.jpg",
+    "magazine": "/images/work/magazine/magazine-cover.jpg",
+    "cay-tre": "/images/work/cay-tre/cay-tre-cover.jpg",
+    "tat-den": "/images/work/tat-den/tat-den-cover.jpg"
+  }
+}
