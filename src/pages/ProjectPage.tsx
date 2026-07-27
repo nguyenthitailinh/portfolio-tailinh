@@ -4,7 +4,7 @@ import { Button } from '../components/Button'
 import { Lightbox } from '../components/Lightbox'
 import { Reveal } from '../components/Reveal'
 import { SmartImage } from '../components/SmartImage'
-import { projects } from '../data/content'
+import { projects, type GalleryGroup } from '../data/content'
 
 export function ProjectPage() {
   const { id } = useParams()
@@ -24,6 +24,12 @@ export function ProjectPage() {
   }
 
   const gallery = project.gallery.length ? project.gallery : [project.cover]
+  const groups = project.galleryGroups
+
+  const openAt = (src: string) => {
+    const index = gallery.indexOf(src)
+    setActive(index >= 0 ? index : 0)
+  }
 
   return (
     <section className="section" style={{ paddingTop: '2rem' }}>
@@ -47,7 +53,7 @@ export function ProjectPage() {
             <button
               type="button"
               className="project-hero-cover"
-              onClick={() => setActive(0)}
+              onClick={() => openAt(project.cover)}
               aria-label="Phóng to ảnh bìa"
             >
               <SmartImage src={project.cover} alt={project.title} loading="eager" />
@@ -64,28 +70,40 @@ export function ProjectPage() {
           ))}
         </div>
 
-        <Reveal>
-          <div className="section-head" style={{ marginBottom: '1.25rem' }}>
-            <span className="eyebrow">Gallery</span>
-            <h2>Ảnh dự án</h2>
-            <p>Bấm ảnh để xem lớn — dùng ← → hoặc vuốt bằng nút điều hướng.</p>
+        {groups?.length ? (
+          <div className="gallery-sections">
+            {groups.map((group, gi) => (
+              <Reveal key={group.title} delay={gi * 0.04}>
+                <GallerySection group={group} onOpen={openAt} />
+              </Reveal>
+            ))}
           </div>
-        </Reveal>
+        ) : (
+          <>
+            <Reveal>
+              <div className="section-head" style={{ marginBottom: '1.25rem' }}>
+                <span className="eyebrow">Gallery</span>
+                <h2>Ảnh dự án</h2>
+                <p>Bấm ảnh để xem lớn — dùng ← → hoặc vuốt bằng nút điều hướng.</p>
+              </div>
+            </Reveal>
 
-        <div className="project-gallery">
-          {gallery.map((src, i) => (
-            <button
-              key={src}
-              type="button"
-              className="gallery-item"
-              onClick={() => setActive(i)}
-            >
-              <SmartImage src={src} alt={`${project.title} ${i + 1}`} />
-            </button>
-          ))}
-        </div>
+            <div className="project-gallery">
+              {gallery.map((src, i) => (
+                <button
+                  key={src}
+                  type="button"
+                  className="gallery-item"
+                  onClick={() => setActive(i)}
+                >
+                  <SmartImage src={src} alt={`${project.title} ${i + 1}`} />
+                </button>
+              ))}
+            </div>
+          </>
+        )}
 
-        <div className="prose-grid" style={{ marginTop: '2rem' }}>
+        <div className="prose-grid" style={{ marginTop: '2.5rem' }}>
           <Reveal>
             <article className="info-block">
               <h2>Thách thức</h2>
@@ -130,6 +148,43 @@ export function ProjectPage() {
           onNext={() => setActive((i) => (i === null ? 0 : (i + 1) % gallery.length))}
         />
       )}
+    </section>
+  )
+}
+
+function GallerySection({
+  group,
+  onOpen,
+}: {
+  group: GalleryGroup
+  onOpen: (src: string) => void
+}) {
+  const layout = group.layout ?? 'default'
+
+  return (
+    <section className={`gallery-section gallery-section--${layout}`}>
+      <div className="gallery-section-head">
+        <span className="eyebrow">{layout === 'months' ? 'Full year' : 'Showcase'}</span>
+        <h2>{group.title}</h2>
+        {layout === 'months' && (
+          <p>Hành trình 12 tháng — mỗi trang một địa danh & ẩm thực Việt.</p>
+        )}
+        {layout === 'mockups' && <p>Thành phẩm lịch để bàn sau khi in — cảm giác thật trên bàn làm việc.</p>}
+      </div>
+
+      <div className={`project-gallery project-gallery--${layout}`}>
+        {group.items.map((item) => (
+          <button
+            key={item.src}
+            type="button"
+            className="gallery-item"
+            onClick={() => onOpen(item.src)}
+          >
+            <SmartImage src={item.src} alt={item.caption ?? group.title} />
+            {item.caption && <span className="gallery-caption">{item.caption}</span>}
+          </button>
+        ))}
+      </div>
     </section>
   )
 }

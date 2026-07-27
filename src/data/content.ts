@@ -1,4 +1,15 @@
-export type ProjectCategory = 'packaging' | 'graphic' | 'editorial' | 'illustration'
+export type ProjectCategory = 'packaging' | 'social' | 'graphic' | 'editorial' | 'illustration'
+
+export interface GalleryItem {
+  src: string
+  caption?: string
+}
+
+export interface GalleryGroup {
+  title: string
+  layout?: 'mockups' | 'cover' | 'months' | 'default'
+  items: GalleryItem[]
+}
 
 export interface Project {
   id: string
@@ -8,6 +19,8 @@ export interface Project {
   categoryLabel: string
   cover: string
   gallery: string[]
+  /** Optional sectioned gallery (e.g. mockups + 12 months). Lightbox still uses `gallery`. */
+  galleryGroups?: GalleryGroup[]
   year: string
   tools: string[]
   summary: string
@@ -99,20 +112,48 @@ const kinhDoGallery = [
   '/images/work/kinh-do/kinh-do-13.jpg',
 ]
 
-const calendarGallery = [
-  '/images/work/calendar/calendar-mock-1.jpg',
-  '/images/work/calendar/calendar-mock-2.jpg',
-  '/images/work/calendar/calendar-mock-3.jpg',
-  '/images/work/calendar/calendar-mock-4.jpg',
-  '/images/work/calendar/calendar-01.jpg',
-  '/images/work/calendar/calendar-02.jpg',
-  '/images/work/calendar/calendar-03.jpg',
-  '/images/work/calendar/calendar-04.jpg',
-  '/images/work/calendar/calendar-05.jpg',
-  '/images/work/calendar/calendar-06.jpg',
-  '/images/work/calendar/calendar-07.jpg',
-  '/images/work/calendar/calendar-08.jpg',
+const calendarGalleryGroups: GalleryGroup[] = [
+  {
+    title: 'Mockup thành phẩm',
+    layout: 'mockups',
+    items: [
+      { src: '/images/work/calendar/calendar-mock-1.jpg', caption: 'Góc chính · lịch để bàn' },
+      { src: '/images/work/calendar/calendar-mock-2.jpg', caption: 'Chi tiết lò xo & trang tháng' },
+      { src: '/images/work/calendar/calendar-mock-3.jpg', caption: 'Góc nghiêng trên bàn' },
+      { src: '/images/work/calendar/calendar-mock-4.jpg', caption: 'Cận cảnh minh họa' },
+    ],
+  },
+  {
+    title: 'Bìa lịch',
+    layout: 'cover',
+    items: [
+      {
+        src: '/images/work/calendar/calendar-01.jpg',
+        caption: 'Hương Sắc Việt Nam · Bính Ngọ 2026',
+      },
+    ],
+  },
+  {
+    title: '12 tháng đầy đủ',
+    layout: 'months',
+    items: [
+      { src: '/images/work/calendar/calendar-02.jpg', caption: 'Tháng 01 · Hà Nội' },
+      { src: '/images/work/calendar/calendar-03.jpg', caption: 'Tháng 02 · Sa Pa' },
+      { src: '/images/work/calendar/calendar-04.jpg', caption: 'Tháng 03 · Ninh Bình' },
+      { src: '/images/work/calendar/calendar-05.jpg', caption: 'Tháng 04 · Nghệ An' },
+      { src: '/images/work/calendar/calendar-06.jpg', caption: 'Tháng 05 · Huế' },
+      { src: '/images/work/calendar/calendar-07.jpg', caption: 'Tháng 06 · Đà Nẵng' },
+      { src: '/images/work/calendar/calendar-08.jpg', caption: 'Tháng 07 · Hội An' },
+      { src: '/images/work/calendar/calendar-09.jpg', caption: 'Tháng 08 · Nha Trang' },
+      { src: '/images/work/calendar/calendar-10.jpg', caption: 'Tháng 09 · Tây Nguyên' },
+      { src: '/images/work/calendar/calendar-11.jpg', caption: 'Tháng 10 · Đà Lạt' },
+      { src: '/images/work/calendar/calendar-12.jpg', caption: 'Tháng 11 · Cần Thơ' },
+      { src: '/images/work/calendar/calendar-13.jpg', caption: 'Tháng 12 · TP. Hồ Chí Minh' },
+    ],
+  },
 ]
+
+const calendarGallery = calendarGalleryGroups.flatMap((g) => g.items.map((i) => i.src))
 
 const kiengLaGallery = [
   '/images/work/kieng-la/kieng-la-keyvisual.jpg',
@@ -202,30 +243,31 @@ export const projects: Project[] = [
     categoryLabel: 'Editorial',
     cover: '/images/work/calendar/calendar-mock-1.jpg',
     gallery: calendarGallery,
+    galleryGroups: calendarGalleryGroups,
     year: '2026',
     tools: ['Illustrator', 'Photoshop'],
     summary:
-      'Bộ lịch để bàn chủ đề “Hương Sắc Việt Nam” (Bính Ngọ 2026) với minh họa landmark, ẩm thực và mockup sản phẩm in.',
+      'Bộ lịch để bàn chủ đề “Hương Sắc Việt Nam” (Bính Ngọ 2026): bìa + đủ 12 tháng theo địa danh & ẩm thực Việt, kèm 4 mockup thành phẩm in.',
     challenge:
       'Mỗi tháng cần một nhịp thị giác riêng nhưng vẫn thuộc cùng một ngôn ngữ minh họa và typography.',
     process: [
       'Xây dựng key visual bìa và hệ mây trang trí.',
-      'Minh họa các tháng theo địa danh / văn hóa Việt.',
+      'Minh họa đủ 12 tháng theo hành trình Bắc → Nam.',
       'Mockup lịch lò xo để kiểm tra cảm giác thành phẩm.',
     ],
-    outcome: 'Full set trang lịch + mockup sẵn sàng cho trình bày in ấn / NXB.',
+    outcome: 'Full set 12 tháng + bìa + mockup sẵn sàng trình bày in ấn / NXB.',
     highlights: [
       { label: 'Format', value: 'Desk calendar' },
-      { label: 'Pages', value: `${calendarGallery.length}+` },
-      { label: 'Theme', value: 'Việt Nam' },
+      { label: 'Months', value: '12/12' },
+      { label: 'Assets', value: `${calendarGallery.length}` },
     ],
   },
   {
     id: 'kieng-la-hotpot',
     title: 'Kiêng Là Hot Pot',
     subtitle: 'Key visual & social F&B — campaign Quốc Khánh',
-    category: 'graphic',
-    categoryLabel: 'Graphic Design',
+    category: 'social',
+    categoryLabel: 'Social',
     cover: '/images/work/kieng-la/kieng-la-keyvisual.jpg',
     gallery: kiengLaGallery,
     year: '2025',
@@ -349,6 +391,7 @@ export const projects: Project[] = [
 export const categories: { id: ProjectCategory | 'all'; label: string }[] = [
   { id: 'all', label: 'Tất cả' },
   { id: 'packaging', label: 'Packaging' },
+  { id: 'social', label: 'Social' },
   { id: 'graphic', label: 'Graphic Design' },
   { id: 'editorial', label: 'Editorial' },
   { id: 'illustration', label: 'Illustration' },

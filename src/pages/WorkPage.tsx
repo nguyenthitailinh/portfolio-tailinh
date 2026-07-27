@@ -18,8 +18,8 @@ export function WorkPage() {
           <span className="eyebrow">Portfolio</span>
           <h1>Work theo danh mục</h1>
           <p>
-            {projects.length} dự án thật — Packaging, Graphic, Editorial, Illustration. Chọn danh mục
-            để lọc nhanh.
+            {projects.length} dự án thật — Packaging, Social, Graphic, Editorial, Illustration. Chọn
+            danh mục để lọc nhanh.
           </p>
 
           <div className="filter-bar" role="tablist" aria-label="Lọc danh mục">
