@@ -109,10 +109,8 @@ export function HomePage() {
           </Reveal>
 
           <div className="featured-list">
-            {featured.map((project, i) => (
-              <Reveal key={project.id} delay={i * 0.08}>
-                <FeaturedProjectCard {...project} />
-              </Reveal>
+            {featured.map((project) => (
+              <FeaturedProjectCard key={project.id} {...project} />
             ))}
           </div>
 
