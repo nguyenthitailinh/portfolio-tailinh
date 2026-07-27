@@ -13,9 +13,9 @@
   --radius: 18px;
   --nav-h: 76px;
   --max: 1160px;
-  --font-display: 'Syne', system-ui, sans-serif;
-  --font-serif: 'Instrument Serif', Georgia, serif;
-  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-serif: 'Plus Jakarta Sans', 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-body: 'Be Vietnam Pro', 'Plus Jakarta Sans', system-ui, sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --shadow: 0 24px 60px rgba(17, 17, 17, 0.08);
 }
@@ -143,8 +143,9 @@ h3,
 h4 {
   margin: 0;
   font-family: var(--font-display);
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  font-weight: 700;
 }
 
 p {
@@ -399,10 +400,11 @@ p {
 }
 
 .hero h1 em {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--accent-deep);
+  letter-spacing: -0.04em;
 }
 
 .hero-lead {
