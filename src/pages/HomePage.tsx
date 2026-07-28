@@ -79,7 +79,7 @@ export function HomePage() {
                 <span>GPA tại VKU</span>
               </div>
               <div className="stat">
-                <strong>7</strong>
+                <strong>8</strong>
                 <span>Dự án showcase</span>
               </div>
               <div className="stat">

@@ -207,7 +207,42 @@ const tatDenGallery = [
   '/images/work/tat-den/tat-den-cover.jpg',
 ]
 
+const studyAppGallery = [
+  '/images/work/study-app/study-app-01.png',
+  '/images/work/study-app/study-app-02.png',
+  '/images/work/study-app/study-app-03.png',
+  '/images/work/study-app/study-app-04.png',
+  '/images/work/study-app/study-app-05.png',
+  '/images/work/study-app/study-app-06.png',
+]
+
 export const projects: Project[] = [
+  {
+    id: 'study-app',
+    title: 'Study App',
+    subtitle: 'UI/UX ứng dụng học tập — flow onboarding, home & profile',
+    category: 'graphic',
+    categoryLabel: 'Graphic Design',
+    cover: '/images/work/study-app/study-app-01.png',
+    gallery: studyAppGallery,
+    year: '2026',
+    tools: ['Figma', 'UI/UX', 'Prototyping'],
+    summary:
+      'Thiết kế giao diện ứng dụng học tập di động: flow onboarding, trang chủ, danh sách khoá học và hồ sơ người dùng — toàn bộ 6 màn hình chính trong Figma.',
+    challenge:
+      'Xây dựng hệ thống navigation rõ ràng, component nhất quán và hierarchy thông tin giúp người mới dùng hiểu được luồng học trong vài giây đầu tiên.',
+    process: [
+      'Sketch wireframe và xác định user flow: onboarding → home → khoá học → profile.',
+      'Thiết kế 6 màn hình chính trong Figma với system màu, typography và icon đồng bộ.',
+      'Prototype tương tác để kiểm tra cảm giác điều hướng và chỉnh iterate theo nhận xét.',
+    ],
+    outcome: 'Bộ UI 6 màn hình hoàn chỉnh, sẵn sàng trình bày cho đây là case study UI/UX trong portfolio.',
+    highlights: [
+      { label: 'Type', value: 'Mobile App' },
+      { label: 'Screens', value: `${studyAppGallery.length}` },
+      { label: 'Focus', value: 'UI/UX' },
+    ],
+  },
   {
     id: 'kinh-do-nguyet-vien',
     title: 'Kinh Đô — Tết Nguyệt Viên',
